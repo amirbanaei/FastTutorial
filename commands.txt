@@ -1,0 +1,12 @@
+Ctrl+j to go to the terminal , then : 
+1-  python -m venv env   
+2-  env\Scripts\activate
+3-  pip install -r requirements.txt  
+4-  uvicorn main:app --reload
+
+
+
+git init
+
+git add .
+git commit -m "added repo"
