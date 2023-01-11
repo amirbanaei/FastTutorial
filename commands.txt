@@ -10,3 +10,4 @@ git init
 
 git add .
 git commit -m "added repo"
+git status

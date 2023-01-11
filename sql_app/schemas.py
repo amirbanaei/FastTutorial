@@ -31,7 +31,7 @@ class StoreCreate(StoreBase):
 
 class Store(StoreBase):
     id: int
-    # items: List[Item] = []
+    items: List[Item] = []
 
     class Config:
         orm_mode = True
