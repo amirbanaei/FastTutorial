@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, Float
+from sqlalchemy import Column, ForeignKey, Integer, String, Float, text
 from sqlalchemy.orm import relationship
 
 from db import Base
@@ -22,3 +22,14 @@ class Store(Base):
 
     def __repr__(self):
         return 'Store(name=%s)' % self.name
+
+
+class Test(Base):
+    __tablename__ = 'test'
+
+    fn = Column(String(50), nullable=False)
+    ln = Column(String(100), nullable=False)
+    store_id = Column(ForeignKey('stores.id'))
+    id = Column(Integer, primary_key=True, server_default=text("nextval('test_id_seq'::regclass)"))
+
+    store = relationship('Store')

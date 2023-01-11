@@ -4,6 +4,11 @@ Ctrl+j to go to the terminal , then :
 3-  pip install -r requirements.txt  
 4-  uvicorn main:app --reload
 
+
+
+ sqlacodegen postgresql://postgres:postgres123@localhost:5432/dblab --tables test
+
+ 
 git init
 
 git add .
