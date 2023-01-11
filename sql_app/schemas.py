@@ -28,7 +28,6 @@ class StoreBase(BaseModel):
 class StoreCreate(StoreBase):
     pass
 
-
 class Store(StoreBase):
     id: int
     items: List[Item] = []
