@@ -4,8 +4,6 @@ Ctrl+j to go to the terminal , then :
 3-  pip install -r requirements.txt  
 4-  uvicorn main:app --reload
 
-
-
 git init
 
 git add .
